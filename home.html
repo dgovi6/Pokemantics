@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<title>Pokémantics - Gotta Graph 'em All</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/scroll.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		@font-face {
+	    	font-family: "pokefont";
+	    	src:url("font/poke_font.ttf");
+		}
+		body{
+	    	font-family:"pokefont";
+		}
+	</style>
+</head>
+
+<body>
+
+	<audio id="opening" controls>
+  		<source src="audio/opening.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="oak" controls>
+  		<source src="audio/oak.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="gym" controls>
+  		<source src="audio/gym.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="battle" controls>
+  		<source src="audio/battle.mp3" type="audio/mpeg">
+	</audio>
+
+	<section id="home">
+		<div id="home_logo">
+			<img src="img/logo.png">
+			<img class="scroll" href="#pick_starter" src="img/arrow.png">
+		</div>
+	</section>
+
+	<section id="pick_starter">
+		<h2>Scegli il tuo starter</h2>
+		<img id="oak" src="img/oak.png">
+		<div id="picker">
+			<img class="shake" src="img/pokeball.png">
+			<img class="shake" src="img/pokeball.png">
+			<img class="shake" src="img/pokeball.png">
+		</div>
+		<img id="pokedex" src="img/pokedex.png">
+		<div class="submit">
+			<img src="img/bracelet.png" id="submit0" class="scroll" href="#q1">
+		</div>
+	</section>
+
+	<section id="q1">
+		<h2></h2>
+		<div class="console">
+			<div class="answer"></div>
+			<div class="answer"></div>
+			<div class="answer"></div>
+			<div class="answer"></div>
+		</div>
+		<div class="submit">
+			<img src="img/pkgo2.png" id="submit1" class="submit scroll" href="#q2">
+		</div>
+	</section>
+
+	<section id="q2">
+		<h2></h2>
+		<div class="console">
+			<div class="answer"></div>
+			<div class="answer"></div>
+			<div class="answer"></div>
+			<div class="answer"></div>
+		</div>
+		<div class="submit">
+			<img src="img/pkgo2.png" id="submit2" class="submit scroll" href="#q3">
+		</div>
+	</section>
+
+	<section id="q3">
+		<h2></h2>
+		<div class="console">
+			<div class="answer"></div>
+			<div class="answer"></div>
+			<div class="answer"></div>
+			<div class="answer"></div>
+		</div>
+		<div class="submit">
+			<img src="img/pkgo2.png" id="submit3" class="submit scroll" href="#q4">
+		</div>
+	</section>
+
+	<section id="q4">
+		<h2></h2>
+		<div class="console">
+			<div class="answer"></div>
+			<div class="answer"></div>
+			<div class="answer"></div>
+			<div class="answer"></div>
+		</div>
+		<div class="submit">
+			<img src="img/pkgo2.png" id="submit4" class="submit scroll" href="#challenge">
+		</div>
+	</section>
+
+	<section id="challenge">
+		<div id="fgh_container">
+			<div id="blue">
+				<img src="img/blue.png">
+				<div id="blue_grill">
+					<div class="a"></div>
+					<div class="b"></div>
+					<div class="c"></div>
+					<div class="d"></div>
+					<div class="e"></div>
+					<div class="f"></div>
+				</div>
+			</div>
+			<div id="player">
+				<div id="player_grill">
+					<div class="a"></div>
+					<div class="b"></div>
+					<div class="c"></div>
+					<div class="d"></div>
+					<div class="e"></div>
+					<div class="f"></div>
+				</div>
+				<div id="player_pool">
+					<div class="l animate"></div>
+					<div class="l animate"></div>
+					<div class="l animate"></div>
+					<div class="l animate"></div>
+					<div class="l animate"></div>
+					<div class="r animate"></div>
+					<div class="r animate"></div>
+					<div class="r animate"></div>
+					<div class="r animate"></div>
+					<div class="r animate"></div>
+				</div>
+				<div id="poke_picker">
+					<div><img src="img/close.png"></div>
+					<div><img id="pkb_1" src="img/open.png"></div>
+					<div><img id="pkb_2" src="img/close.png"></div>
+					<div><img id="pkb_3" src="img/close.png"></div>
+					<div><img id="pkb_4" src="img/close.png"></div>
+					<div><img id="pkb_5" src="img/close.png"></div>
+				</div>
+			</div>
+			<div class="submit">
+				<img src="img/pkgo2.png" id="final_submit" class="submit scroll" href="#result">
+			</div>
+		</div>
+	</section>
+
+	<section id="result">
+		<h2>Ecco il tuo punteggio nel quiz</h2>
+		<div class="pyro">
+			<div class="before"></div>
+    		<div class="after"></div>
+			<div id="record">
+			<h3>Score:</h3>
+		</div>
+		</div>
+	</section>
+
+</body>
+
+</html>
